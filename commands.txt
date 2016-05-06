@@ -1,0 +1,5 @@
+Commands:
+
+webpack --minimize
+
+webpack-dev-server --inline --hot
