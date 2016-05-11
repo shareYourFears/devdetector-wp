@@ -1,13 +1,17 @@
 <template>
 	<h1>What kind of Web are you?</h1>
-	<div class="message">{{ msg }}</div>
+	<div id="currentView">
+		<component :is="currentView"></component>
+	</div>
 </template>
 
 <script>
+import viewSplash from './viewSplash.vue'
+
 export default {
   data () {
     return {
-      msg: 'Hello from vu2e-lo444ader2!'
+      currentView: {viewSplash}
     }
   }
 }

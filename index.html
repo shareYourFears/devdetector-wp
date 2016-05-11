@@ -5,7 +5,9 @@
     <title>What kind of Web are you?</title>
   </head>
   <body>
-  	<app></app>
+  	<app>
+  		<component :is="currentView"></component>  		
+  	</app>
     <script src="dist/bundle.js"></script>
   </body>
 </html>
